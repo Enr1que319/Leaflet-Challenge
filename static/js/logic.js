@@ -8,6 +8,10 @@ function map_sel(mapType) {
       maxZoom: 18,
       zoomOffset: -1,
       noWrap: true,
+      bounds: [
+        [-90, -180],
+        [90, 180],
+      ],
       id: `mapbox/${mapType}`,
       accessToken: API_KEY,
     }
