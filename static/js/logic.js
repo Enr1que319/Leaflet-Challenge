@@ -41,6 +41,9 @@ function colorCircle(data) {
 var url =
   "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-05-01&endtime=2020-05-15&minmagnitude=1";
 
+var tectonic_url =
+  "https://enr1que319-earthquakes.herokuapp.com/api/v1/tectonic_plates";
+
 var colors = ["#00ff00", "#32cd32", "#ffd700", "#ffa500", "#d2691e", "#dc143c"];
 
 var lab = ["O-1", "1-2", "2-3", "3-4", "4-5", "+5"];
@@ -59,8 +62,10 @@ var baseMaps = {
   "Dark Map": map_sel("dark-v10"),
 };
 
-d3.json("../json/plates.json", (platGJSON) => {
+d3.json(tectonic_url, (data) => {
   d3.json(url, (earthGJSON) => {
+    var platGJSON = data[0];
+
     var plates = [L.geoJson(platGJSON, { style: mapStyle })];
 
     var layPlates = L.layerGroup(plates);
