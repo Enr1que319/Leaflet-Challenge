@@ -7,6 +7,7 @@ function map_sel(mapType) {
       tileSize: 512,
       maxZoom: 18,
       zoomOffset: -1,
+      continuousWorld: false,
       noWrap: true,
       bounds: [
         [-90, -180],
