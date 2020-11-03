@@ -1,7 +1,7 @@
 # Leaflet-Challenge
 
 
-[![](img/Risk.png)]()
+[![](img/earth.png)]()
 
 ## Introduction
 
