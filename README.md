@@ -24,7 +24,7 @@ The map can be consulted here -> [Earthquakes map](https://enr1que319-earthquake
 
 ### Tools
 
-The following tools were used to do the analysis
+The following tools were used to do the analysis.
 
 - HTML5
 - CSS
